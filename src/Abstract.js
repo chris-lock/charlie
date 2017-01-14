@@ -106,11 +106,11 @@ class AbstractStaticProperty
 extends AbstractProperty {
   throwError(): void {
     var set: (owner: Object, value: any) => void
-          = this.restoreIfNotInitialDeclaration.bind(this);
+          = this.restoreIfNotInitialDeclaration;
 
     Object.defineProperty(this.abstract, this.name, {
       configurable: true,
-      get: super.throwError.bind(this),
+      get: super.throwError,
       set: function(value: any) {
         set(this, value);
       },

@@ -8,10 +8,10 @@
     "node": "7.4.0",
     "yarn": "0.18.1"
   },
-  "dependencies": {},
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-jest": "18.0.0",
+    "babel-plugin-autobind-class-methods": "2.1.1",
     "babel-plugin-check-es2015-constants": "6.8.0",
     "babel-plugin-syntax-jsx": "6.18.0",
     "babel-plugin-transform-class-properties": "6.19.0",
